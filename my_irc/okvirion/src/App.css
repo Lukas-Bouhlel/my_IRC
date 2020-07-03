@@ -1,0 +1,171 @@
+@import url("//db.onlinewebfonts.com/c/2114e5d213da035905e525f130920db0?family=UniSansW01-Book");
+@import url("//db.onlinewebfonts.com/c/0ede455aa2e9ad358fb290c14c4e073c?family=UniSansW01-Bold");
+@import url("//db.onlinewebfonts.com/c/952bab25f6798d6bb1937d67e9bee4dd?family=Sans)");
+.App {
+  text-align: center;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.column {
+  height: 100%;
+  display: inline-flex;
+  flex-direction: column;
+}
+.msg-username {
+  color: #E9C46A;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px
+}
+.msg {
+  color: white;
+  font-family: 'UniSansW01-Book';
+  font-size: 15px
+}
+/* CREATE CHANNELS / MESSAGES */
+.ChannelCreate{
+  font-family: 'UniSansW01-Book';
+  color: white;
+  font-size: 16px;
+}
+.create-textbox{
+  margin-top: 10px;
+  border:0px solid #2A9D8F;
+  border-radius:3px;
+  margin:8px 0;
+  outline:none;
+  padding:6px;
+  box-sizing:border-box;
+  transition:.3s;
+  font-size: 14px;
+  width: 95%;
+}
+.create-textbox:focus{
+  box-shadow:0 0 8px 0 #2A9D8F;
+}
+.create-message{
+  margin-top: 10px;
+  border:0px solid #2A9D8F;
+  border-radius:3px;
+  margin:8px 0;
+  outline:none;
+  padding:6px;
+  box-sizing:border-box;
+  transition:.3s;
+  font-size: 14px;
+  width: 54%;
+}
+.create-message:focus{
+  box-shadow:0 0 8px 0 #2A9D8F;
+}
+.logo {
+  width: 100px;
+}
+.label{
+    border: 1px solid #2A9D8F;
+    color: #2A9D8F;
+    padding: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    text-transform: capitalize;
+}
+input.label {
+  background-image: linear-gradient(0, #2A9D8F, #2A9D8F);
+  background-size: 0;
+  transition: .8s;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+.label:hover {
+  background-size: 100%;
+  color: #fff;
+}
+/*-------------------*/
+.sidebar {
+  background: #23272A;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  flex-shrink: 0;
+  color: #E76F51;
+  border: 10px;
+  font-family: 'UniSansW01-Bold';
+  font-size: 18px;
+}
+.content {
+  overflow: auto;
+
+}
+hr {
+  width: 100%;
+}
+.command {
+  background: #23272A;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  flex-shrink: 0;
+  color: #E76F51;
+  border: 10px;
+  font-family: 'UniSansW01-Bold';
+  font-size: 18px;
+  position: fixed;
+  right: 0;
+  min-width: 250px;
+  width: 250px;
+  max-width: 250px;
+}
+.textbox-message {
+  position: fixed;
+  bottom: 0;
+}
+textarea {
+  resize: none;
+}
+body {
+  background-color: #2C2F33;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  display: flex;
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
